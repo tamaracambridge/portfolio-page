@@ -2,6 +2,7 @@ import React from "react";
 import HeroImg from "../../assets/hero-img.png"
 
 
+
 import {
   AiOutlineTwitter,
   AiOutlineYoutube,
@@ -10,7 +11,7 @@ import {
 
 const Hero = () => {
   return (
-    <section className="bg-primary px-5 text-white py-32">
+    <section className="bg-primary px-5 text-white py-32 font-lobster">
       <div className="container mx-auto grid md:grid-cols-2 items-center justify-center md:justify-between">
         <div className="hero-info pb-5 md:pb-0">
           <h1 className="text-4xl lg:text-6xl">

@@ -4,7 +4,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-
+import Employment from "./components/Employment/Employment";
 
 function App() {
 
@@ -13,6 +13,7 @@ function App() {
      <Header/>
      <Hero/>
      <About/>
+     <Employment/>
      <Projects/>
      <Contact/>
     </>

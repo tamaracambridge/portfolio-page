@@ -8,7 +8,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
   const sections = [{name: "About", lowerName: "about"},
   {name: "Projects", lowerName: "projects"},
-  {name: "History", lowerName: "history"},
+  {name: "Employment History", lowerName: "employment/history"},
   {name: "Resume", lowerName: "resume"},
   {name: "Contact", lowerName: "contact"}]
   const handleToggle = () => setToggle(!toggle);
@@ -17,7 +17,7 @@ const Header = () => {
     <>
     <div className="flex justify-end">
 
-    <a href="/" className="logo text-4xl font-bold text-accent">
+    <a href="/" className="font-lobster logo text-4xl font-bold text-accent transition duration-150 ease-in-out hover:scale-110 pr-3 ">
      Tamara Skerritt-Cambridge
    </a>
    </div>
@@ -27,8 +27,8 @@ const Header = () => {
 <ul className="flex">
       {sections.map((section) => {
         return(
-          <li className= "ml-5 mb-5 mt-5 hover:h-full group-hover:w-full group-hover:transition-all ">
-            <a href={"/#"+ section.lowerName} className= "hover:pink hover:-translate-y-1 transition ease-in-out delay-150 hover:scale-110 pl-5 pb-5 pt-5 pr-5 scroll">
+          <li className= "mb-5 mt-5 hover:h-full group-hover:w-full group-hover:transition-all font-space">
+            <a href={"/#"+ section.lowerName} className= "hover:pink hover:-translate-y-1 transition ease-in-out delay-150 hover:scale-110 pl-5 pb-5 pt-5 pr-5 scroll  ">
               {section.name}
             </a>
           </li>
