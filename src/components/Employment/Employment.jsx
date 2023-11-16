@@ -33,16 +33,16 @@ const Employment = () => {
   ];
   return (
     <>
-      <div id="employment/history" class="container flex relative sm:pl-12 group -my-6 px-5 py-32 pt-20">
+      <div id="employment/history" class="container flex relative sm:pl-12 group -my-6 px- py-32 pt-20  mx-auto md:grid-cols-2 items-center justify-center md:justify-between">
 
-        <div class="container">
+        <div>
 
-<h2 className="ml-3 text-4xl font-bold mb-5 border-b-[5px] w-[500px] border-[#ff74c5] pb-2">
+<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[500px] border-[#ff74c5] pb-2">
             Employment and Education History
           </h2>
 
         <div class="-my-6 pt-10 flex-wrap items-center">
-          <div class="relative pl-8 sm:pl-32 py-6 group">
+          <div class="relative sm:pl-32 py-6 group">
             <div class="font-lobster font-medium text-2xl text-[#ff74c5] mb-1 sm:mb-0">
             University of Leicester
             </div>
