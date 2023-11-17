@@ -7,7 +7,7 @@ import '../Style.css';
 
 
 
-const Projects = () => {
+const Projects = ({mode}) => {
  
   
   const projects = [
@@ -43,14 +43,14 @@ const Projects = () => {
     ];
 
   return (
-    <section className="bg-primary text-white px-5 py-32" id="projects">
+    <section className="bg-primary text-white px-5 pb-8" id="projects">
       <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
         <div className="about-info mb-5">
-          <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2">
+          <h2 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left pb-2">
             Projects
           </h2>
 
-          <p className="pb-5">
+          <p className={`pb-5 ${mode === "light" ? `light:bg-secondary` : `dark:bg-secondary`}`}>
             These are some of my best projects. I have built these with React,
             MERN and vanilla CSS. Check them out.
           </p>

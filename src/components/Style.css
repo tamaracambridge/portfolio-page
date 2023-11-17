@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 /* color */
 .bg-primary {
-    background: #0F172A;
+    background: #A1c3D1;
 }
 
-.bg-secondery {
-    background: #1E293B;
+.bg-secondary {
+    background: #A1c3D1;
 }
 
 .bg-accent {
@@ -24,19 +24,34 @@
     @apply block md:hidden fixed top-10 py-2 w-full h-full bg-gray-900 duration-500;
 } 
 
-.font-container { 
-    font-family: "Agbalumo", sans-serif; 
+.light\:nav-name {
+    background: #ff74c5;
 }
 
-nav li a {
-    @apply px-4 py-5 text-lg;
+.light\:bg-primary {
+    background: #ebdaf9;
 }
 
-nav li a:hover {
-    color: #ff74c5;
+.light\:bg-secondary {
+    background: #f172a1;
 }
 
-h2 {
-    font-family: 'Space Grotesk',;
-    line-height: 1.5 !important;
+.light\:bg-accent {
+    background: #a1c3d1;
+}
+
+.light\:hover\:pink:hover {
+    background: #B39Bc8;
+}
+
+.light\:text-default {
+    background: #f0ebf4;
+}
+
+.light\:text-accent {
+    background: #ff74c5;
+}
+
+.dark\:bg-primary {
+    background: #1560d9;
 }

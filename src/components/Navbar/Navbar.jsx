@@ -3,22 +3,23 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { NavLink } from 'react-router-dom'
 import "../Style.css"
 import { GrActions } from "react-icons/gr";
+import { IconContext } from "react-icons"
+import { sections } from "../../assets/Data/Data";
 
 
-const Header = () => {
-  const [toggle, setToggle] = useState(false);
-  const sections = [{name: "About", lowerName: "about"},
-  {name: "Projects", lowerName: "projects"},
-  {name: "Employment History", lowerName: "employment/history"},
-  {name: "Resume", lowerName: "resume"},
-  {name: "Contact", lowerName: "contact"}]
-  const handleToggle = () => setToggle(!toggle);
 
+const Navbar = ({darkMode, handleClick}) => {
+  const style = { color: "white", fontSize: "1.5em" }
+  
   return (
     <>
+    
     <div className="inline-grid grid-cols-2  w-full">
-    <GrActions className="h-10 w-10" />
-      <div >
+    <div >
+    <GrActions style={style} onClick={handleClick}/>
+
+    </div>
+      <div>
 
     <a href="/" className="font-lobster logo text-4xl font-bold text-accent transition duration-150 ease-in-out hover:scale-110 pr-3 col-start-2 flex justify-end">
      Tamara Skerritt-Cambridge
@@ -39,10 +40,9 @@ const Header = () => {
       )}
 </ul>
 </div>
- 
 </div>
 </>
   );
 };
 
-export default Header;
+export default Navbar;
